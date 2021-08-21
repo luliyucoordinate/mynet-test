@@ -1,0 +1,12 @@
+syntax = "proto3";
+option cc_generic_services = true;
+
+package demo; // Requried to generate valid code.
+
+message ZipCode {
+  string code = 1;
+  string name = 2;
+}
+service SearchService {
+  rpc Search(ZipCode) returns (ZipCode);
+}

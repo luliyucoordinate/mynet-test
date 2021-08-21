@@ -1,0 +1,9 @@
+syntax = "proto3";
+import "zip_code.proto";
+
+package demo2; // Requried to generate valid code.
+
+message ZipCode {
+  string code = 1;
+  string name = 2;
+}
