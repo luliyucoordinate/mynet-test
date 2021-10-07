@@ -16,7 +16,7 @@ table Monster {
   pos:Vec3;
   mana:short = 150;
   hp:short = 100;
-  name:string;
+  name:string (key);
   friendly:bool = false (deprecated);
   inventory:[ubyte];
   color:Color = Blue;

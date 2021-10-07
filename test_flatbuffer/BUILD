@@ -18,8 +18,22 @@ cc_binary(
         "@com_github_google_flatbuffers//:flatbuffers",
     ],
 )
+cc_binary(
+    name = "test_multi_root",
+    srcs = ["test_multi_root.cc"],
+    deps = [
+        "multi_root",
+        "@com_github_google_flatbuffers//:flatbuffers",
+    ],
+)
+
 
 flatbuffer_cc_library(
     name = "monster_fbs",
     srcs = ["monster.fbs"],
+)
+
+flatbuffer_cc_library(
+    name = "multi_root",
+    srcs = ["multi_root.fbs"],
 )

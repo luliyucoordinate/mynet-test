@@ -1,0 +1,11 @@
+namespace mytest;
+
+table one {
+    x: int;
+    y: int;
+}
+
+table two {
+    x: int;
+    y: int;
+}

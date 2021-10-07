@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
     input.close();
 
     
-    auto monster = GetMonster(data);
+    auto monster = GetMonster(data); // GetRoot<Monster>
     auto hp = monster->hp();
     auto mana = monster->mana();
     auto name = monster->name()->c_str();
